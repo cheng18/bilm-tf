@@ -47,4 +47,4 @@ RUN python setup.py install
 
 # Run tests to verify the Docker build
 # and then drop into a shell.
-CMD ["/bin/bash", "run_tests_before_shell.sh"]
+# CMD ["/bin/bash", "run_tests_before_shell.sh"]
