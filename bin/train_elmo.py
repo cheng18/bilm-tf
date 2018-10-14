@@ -13,7 +13,7 @@ def main(args):
 
     # define the options
     batch_size = 128  # batch size for each GPU
-    n_gpus = 2
+    n_gpus = 1
 
     # number of tokens in training data (this for 1B Word Benchmark)
     n_train_tokens = 768648884
@@ -39,14 +39,14 @@ def main(args):
      'lstm': {
       'cell_clip': 3,
       'dim': 4096,
-      'n_layers': 2,
+      'n_layers': 1, # 2
       'proj_clip': 3,
       'projection_dim': 512,
       'use_skip_connections': True},
     
      'all_clip_norm_val': 10.0,
     
-     'n_epochs': 10,
+     'n_epochs': 1, # 10
      'n_train_tokens': n_train_tokens,
      'batch_size': batch_size,
      'n_tokens_vocab': vocab.size,
